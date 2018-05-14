@@ -1,0 +1,43 @@
+/*设置a标签样式*/
+	nav ul li a{
+	 font-size: 1.5rem;
+	}
+	nav ul li a:hover{
+		font-size: 1.5rem;
+	}
+/*-设置a标签样式-*/
+/*头部导航条*/
+	.header{
+		background-size: auto 1.5rem;
+	}
+	.header nav{
+		height: 5vmax;
+		line-height: 5vmax;
+	}
+	.header nav ul{
+		width: auto;
+		display: flex;
+		/*justify-content: space-between;*/
+	}
+/*-头部导航条-*/
+/*轮播图*/
+	.rotation{
+		margin-top: 5vmax;	
+	}
+/*-轮播图-*/
+/*图片瀑布导航*/
+	.content .main-header nav{
+		height: 5vmax;
+		line-height: 5vmax;
+	}
+
+/*-图片瀑布导航-*/
+/*图片瀑布*/
+	.row-flow ul li{
+		height: 15vh;
+	}
+	.row-flow ul li:hover{
+		transform: scale(1);
+		box-shadow: 0 0;
+	}
+/*-图片瀑布-*/

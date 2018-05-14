@@ -1,0 +1,226 @@
+/*重置样式*/
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	html{
+		font-size: 3vmin;
+		overflow-x: hidden;
+	}
+	body{
+	 background: #f2f2f2;
+	 overflow-x: hidden;
+	}
+	li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+/*-重置样式-*/
+/*设置a标签样式*/
+	nav ul li{
+		font-weight: bold;
+		margin-left: 1rem;
+	}
+	nav ul li a{
+		font-size: 1rem;
+		transition: font-size 0.3s;
+
+	}
+	nav ul li a:hover{
+		font-size: 1.2rem;
+	}
+	nav ul li:nth-of-type(1) a{
+		color: #fd6e36;
+	}
+	nav ul li:nth-of-type(2) a{
+		color: #79bfd8;
+	}
+	nav ul li:nth-of-type(3) a{
+		color: #6dc15f;
+	}
+	nav ul li:nth-of-type(4) a{
+		color: #f7dd17;
+	}
+/*-设置a标签样式-*/
+/*头部导航条*/
+	.header{
+		width: 100%;
+		background: rgba(255,255,255,0.8) url(../images/h1_bg.png) no-repeat  1rem center / auto 1.2rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		box-shadow: 0 0 30px -10px;
+		z-index: 988;
+	}
+	.header nav{
+		width: calc(100vmax / 100vmin);
+		height: 4vmax;
+		margin: 0 auto;
+		line-height: 4vmax;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 1rem;
+
+	}
+	.header nav h1{
+		font-size: 1rem;
+		text-indent: -100%;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.header nav ul{
+		width: 40vw;
+		display: flex;
+		justify-content: space-between;
+	}
+/*-头部导航条-*/
+/*轮播图*/
+	.rotation{
+		margin-top: 4vmax;
+		
+	}
+	.rotation ul{
+		width: 500vw;
+		display: flex;
+		animation: rotasport 20s 2s infinite;
+		overflow: hidden;
+	}
+	@keyframes rotasport{
+		12%{
+			margin-left: 0;
+		}
+		25%{
+			margin-left: -100vw;
+		}
+		37%{
+			margin-left: -100vw;
+		}
+		50%{
+			margin-left: -200vw;
+		}
+		62%{
+			margin-left: -200vw;
+		}
+		75%{
+			margin-left: -300vw;
+		}
+		87%{
+			margin-left: -300vw;
+		}
+		100%{
+			margin-left: -400vw;
+		}
+	}
+	.rotation ul li{
+		max-height: calc(100vh - 8vmax);
+		display: inline-block;
+		position: relative;
+	}
+	.rotation ul li img{
+		width: 100vw;
+	}
+	.rotation ul li p{
+		width: 30vmin;
+		height: 30vmin;
+		text-align: center;
+		line-height: 30vmin;
+		font-size: 2rem;
+		color: #f2f2f2;
+		font-weight: bold;
+		background-color: #fd6e36;
+		position: absolute;
+		left: calc((50vw - 50vmin) + 5vmax);
+		top: 5vmax;
+	}
+	.rotation ul li:nth-of-type(2) p{
+		background-color: #79bfd8;
+	}
+	.rotation ul li:nth-of-type(3) p{
+		background-color: #6dc15f;
+	}
+	.rotation ul li:nth-of-type(4) p{
+		background-color: #f7dd17;
+	}
+	
+/*-轮播图-*/
+/*图片瀑布导航*/
+	.content{
+		border-top: 1px solid #ccc;		
+	}
+	.content .main-header{
+		width: 100vw;
+		background: white;
+	}
+	.content .main-header nav{
+		width: calc(100vmax / 100vmin);
+		height: 4vmax;
+		text-align: center;
+		line-height: 4vmax;
+		margin: 0 auto;
+	}
+	.content .main-header nav ul{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+/*-图片瀑布导航-*/
+/*图片瀑布*/
+	.row-flow{
+		width: calc(100vmax / 100vmin);
+		margin: 0 auto;
+	}
+	.row-flow ul{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+	.row-flow ul:after{
+		content: "";
+		flex-grow: 999;
+	}
+	.row-flow ul li{
+		height: 35vh;
+		margin: 2px;
+		flex-grow: 1;
+		display: flex;
+		transition: transform 0.3s;
+
+	}
+	.row-flow ul li img{
+		height: 100%;
+		flex-grow: 1;
+		object-fit: cover;
+		object-position: center;
+	}
+	.row-flow ul li:hover{
+		transform: scale(1.1);
+		box-shadow: 0 0 15px 0px #79bfd8;
+	}
+/*-图片瀑布-*/
+/*尾部*/
+	footer{
+		width: 100vw;
+		background: #ccc;
+		text-align: center;
+		transition: transform 0.3s;
+		line-height: 2rem;
+
+	}
+	footer p{
+		font-size: 1rem;
+		line-height: 2rem;
+		color: #999;
+
+	}
+	footer a{
+		color: #fd6e36;
+		text-decoration: underline;
+	}
+	footer a:hover{
+		color: #79bfd8;
+	}
+/*-尾部-*/
